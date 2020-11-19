@@ -1,11 +1,11 @@
 package sandbox.paul.sfgpetclinic.services.map;
 
 import sandbox.paul.sfgpetclinic.model.Pet;
-import sandbox.paul.sfgpetclinic.services.CrudService;
+import sandbox.paul.sfgpetclinic.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
     public Set<Pet> findAll() {
