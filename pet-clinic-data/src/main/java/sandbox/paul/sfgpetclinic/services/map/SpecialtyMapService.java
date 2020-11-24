@@ -2,12 +2,12 @@ package sandbox.paul.sfgpetclinic.services.map;
 
 import org.springframework.stereotype.Service;
 import sandbox.paul.sfgpetclinic.model.Specialty;
-import sandbox.paul.sfgpetclinic.services.SpecialtiesService;
+import sandbox.paul.sfgpetclinic.services.SpecialtyService;
 
 import java.util.Set;
 
 @Service
-public class SpecialtyMapService extends AbstractMapService<Specialty, Long> implements SpecialtiesService {
+public class SpecialtyMapService extends AbstractMapService<Specialty, Long> implements SpecialtyService {
     @Override
     public Set<Specialty> findAll() {
         return super.findAll();
