@@ -3,7 +3,7 @@ version: 2
 jobs:
   maven/test:
     docker:
-      - image: circleci/openjdk:8-jdk-node
+      - image: circleci/openjdk:stretch
     steps:
       - checkout
       - run:
