@@ -7,6 +7,7 @@ import sandbox.paul.sfgpetclinic.model.Pet;
 import sandbox.paul.sfgpetclinic.services.OwnerService;
 import sandbox.paul.sfgpetclinic.services.PetService;
 
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -76,5 +77,11 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
                 .filter(owner -> owner.getLastName().equalsIgnoreCase(lastName))
                 .findFirst()
                 .orElse(null);
+    }
+
+    @Override
+    public List<Owner> findAllByLastNameLike(String lastName) {
+        //todo Add creation of list
+        return null;
     }
 }
